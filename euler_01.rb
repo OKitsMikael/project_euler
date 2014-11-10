@@ -1,15 +1,12 @@
-def fizzbuzz(limit)
-	threes = 0
-	fives = 0
+def multiples(limit)
+	sum = 0
 	for i in 1...limit do
-		if i % 3 == 0
-			threes += i
-		elsif i % 5 == 0
-			fives += i
+		if i % 3 == 0 || i % 5 == 0
+			sum += i
 		end
 	end
 
-	threes + fives
+	sum
 end
 
-puts fizzbuzz(1000)
+puts multiples(1000)
